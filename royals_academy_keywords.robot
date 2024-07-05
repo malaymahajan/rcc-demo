@@ -9,7 +9,9 @@ ${academy_register_page_title}=  Register Your Interest
 
 *** Keywords ***
 Launch Application
-    Open Browser    https://stg-rr.sportz.io/    headlesschrome
+    ${options} =  Evaluate  sys.modules['selenium.webdriver'].ChromeOptions()  sys, selenium.webdriver
+    Call Method  ${options}  add_argument  headless
+    Open Browser    https://stg-rr.sportz.io/    chrome    options=${options}
 
 Click On Royals Academy Link
     Wait Until Element Is Visible    ${royals_academy_link}

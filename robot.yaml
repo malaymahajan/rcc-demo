@@ -3,7 +3,7 @@
 
 tasks:
   Run all tasks:
-    shell: pabot --testlevelsplit --processes 5 --report NONE --outputdir output --logtitle "royals_academy" royals_academy_test.robot
+    shell: robot --report NONE --outputdir output --logtitle "royals_academy" royals_academy_test.robot
 
 environmentConfigs:
 #  - chrome_windows_qa.yml
