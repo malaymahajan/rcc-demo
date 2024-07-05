@@ -1,0 +1,25 @@
+# For more details on the format and content:
+# https://github.com/robocorp/rcc/blob/master/docs/recipes.md#what-is-in-robotyaml
+
+tasks:
+  Run all tasks:
+    shell: pabot --testlevelsplit --processes 5 --report NONE --outputdir output --logtitle "royals_academy" royals_academy_test.robot
+
+environmentConfigs:
+#  - chrome_windows_qa.yml
+#  - environment_linux_amd64_freeze.yaml
+#- environment_windows_amd64_freeze.yaml
+#- common_linux_amd64.yaml
+#- common_windows_amd64.yaml
+#- common_linux.yaml
+#- common_windows.yaml
+  - conda.yaml
+
+artifactsDir: output  
+
+PATH:
+  - .
+PYTHONPATH:
+  - .
+ignoreFiles:
+  - .gitignore
