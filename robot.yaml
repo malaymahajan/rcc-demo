@@ -3,7 +3,7 @@
 
 tasks:
   Run all tasks:
-    shell: robot --report NONE --outputdir output --logtitle "royals_academy" royals_academy_test.robot
+    shell: browserstack-sdk robot --report NONE --outputdir output --logtitle "royals_academy" royals_academy_test.robot
 
 environmentConfigs:
 #  - environment_linux_amd64_freeze.yaml
