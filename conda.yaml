@@ -10,7 +10,6 @@ dependencies:
   - pip=24.0                        # https://pip.pypa.io/en/stable/news
   - pip:
       - robotframework==6.1.1
-      - webdrivermanager
       - selenium==4.15.2
       - robotframework-seleniumlibrary==6.2.0
 
