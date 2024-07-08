@@ -3,17 +3,17 @@ accessKey: xtdYnbUnPap5jXAc5CPz
 framework: robot
 platforms:
   - os: Windows
-    osVersion: 10
+    osVersion: 11
     browserName: Chrome
     browserVersion: 120.0
   - os: OS X
     osVersion: Monterey
     browserName: Safari
     browserVersion: 15.6
-  - deviceName: iPhone 13
-    osVersion: 15
-    browserName: Chromium
-    deviceOrientation: portrait
+  - browserName: Firefox
+    os: Windows
+    osVersion: 10
+    browserVersion: latest
 parallelsPerPlatform: 1
 browserstackLocal: true
 buildName: browserstack-build-1

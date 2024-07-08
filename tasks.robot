@@ -1,9 +1,6 @@
 *** Settings ***
 Documentation       An Assistant Robot.
 
-
-
-
 *** Tasks ***
 Main
     log    %{WEBSITE_URL}

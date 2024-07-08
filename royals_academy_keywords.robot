@@ -14,7 +14,7 @@ Launch Application
     Call Method  ${options}  add_argument  --disable-infobars
     Call Method  ${options}  add_argument  --disable-extensions
     Call Method  ${options}  add_argument  --no-sandbox
-    Call Method  ${options}  add_argument  --headless
+#    Call Method  ${options}  add_argument  --headless
     Call Method  ${options}  add_argument  --disable-dev-shm-usage
     Open Browser    https://stg-rr.sportz.io/    chrome    options=${options}
 
